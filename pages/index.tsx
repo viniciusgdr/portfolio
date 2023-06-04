@@ -13,7 +13,7 @@ export const Index = () => {
         <div className="line opacity-20 ml-[50%] absolute h-screen w-[1px] top-0 left-[50%] bg-white overflow-hidden"></div>
       </div>
       <div className="text-center-view text-center self-center pl-32">
-        <h1 className="text-8xl font-bold text-white pb-8">Carlos Vinicius</h1>
+        <h1 className="text-8xl font-bold text-white pb-8 writing-text-animation">Carlos Vinicius</h1>
         <div className="cd-headline rotate-1">
           <span className="cd-words-wrapper text-2xl">
             <b>Desenvolvedor Web</b>
@@ -58,7 +58,7 @@ export const About = () => {
             width={200}
             height={200}
           />
-          <div className="pl-4 self-center pt-4">
+          <div>
             <h2 className='text-2xl pb-2'>Desenvolvedor Web</h2>
             <h3 className='text-blue-500 flex items-center justify-center'>
               <FaLocationArrow />{'  '}
