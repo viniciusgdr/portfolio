@@ -23,13 +23,19 @@ export const Index = () => {
       <div className="absolute pt-16 right-20">
         <div className="flex flex-col justify-center h-full">
           <div className="flex justify-center">
-            <FaInstagram />
+            <a href="https://instagram.com/viniciusgdr1">
+              <FaInstagram />
+            </a>
           </div>
           <div className="flex justify-center mt-3">
-            <FaWhatsapp />
+            <a href="mailto:viniciusgdr@outlook.com">
+              <FaMailBulk />
+            </a>
           </div>
           <div className="flex justify-center mt-3">
-            <FaGithub />
+            <a href="https://github.com/viniciusgdr">
+              <FaGithub />
+            </a>
           </div>
         </div>
       </div>
