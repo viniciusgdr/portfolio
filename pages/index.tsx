@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { NextRouter, useRouter } from 'next/router'
-import { FaSitemap, FaDesktop, FaLocationArrow, FaInstagram, FaWhatsapp, FaGithub, FaAddressBook, FaUserTie, FaHome, FaEnvelope, FaBriefcase } from 'react-icons/fa'
+import { FaPlug, FaRobot, FaSitemap, FaDesktop, FaLocationArrow, FaInstagram, FaWhatsapp, FaGithub, FaAddressBook, FaUserTie, FaHome, FaEnvelope, FaBriefcase } from 'react-icons/fa'
 
 export const Index = () => {
   return (
@@ -150,18 +150,29 @@ export default function Home() {
                   <h2>Serviços</h2>
                 </div>
                 <div className="bg-[#070708] border rounded-lg pt-2 pb-4 text-center">
-                  <div className="grid grid-cols-2 p-4 grid-flow-col">
-                    <div className="flex flex-col text-center place-self-center items-center">
+                  <div className="grid lg:grid-cols-2 sm:grid-cols-1 p-2 gap-8">
+                    <div className="rounded bg-slate-500 pt-4 pb-4 flex flex-col text-center place-self-center items-center">
                       <FaDesktop size={50} />
                       <h1 className='text-2xl'>Desenvolvimento Web</h1>
                       <a>Desenvolvimento de sistemas para internet escaláveis, com qualidade e personalização. Sempre de olho em novas tendências e utilizando as melhores tecnologias do mercado sempre alinhadas com os seus objetivos.</a>
                     </div>
-                    <div className="flex flex-col text-center place-self-center items-center">
+                    <div className="rounded bg-slate-500 pt-4 pb-4 flex flex-col text-center place-self-center items-center">
                       <FaSitemap size={50} />
                       <p className='text-2xl'>Criação de Sites</p>
                       <a>Sites profissionais, personalizados e responsivos de alta performance e otimizados para o Google. Aumente a visibilidade do seu negócio na internet e gere credibilidade para a sua empresa.</a>
                     </div>
+                    <div className="rounded bg-slate-500 pt-4 pb-4 flex flex-col text-center place-self-center items-center">
+                      <FaRobot size={50} />
+                      <p className='text-2xl'>Criação de Bots</p>
+                      <a>Automatize seus processos (atendimento ao cliente, suporte, etc) com nossas soluções de chatbots inteligentes para Whatsapp, Telegram, Discord, etc.</a>
+                    </div>
+                    <div className="rounded bg-slate-500 pt-4 pb-4 flex flex-col text-center place-self-center items-center">
+                      <FaPlug size={50} />
+                      <p className='text-2xl'>Integração entre Sistemas</p>
+                      <a>A integração de sistemas é um processo que tem o propósito de reunir duas ou mais soluções empresariais em apenas uma ou deixá-las interligadas.</a>
+                    </div>
                   </div>
+
                 </div>
               </section>
             </div>
