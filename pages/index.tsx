@@ -194,8 +194,8 @@ export const Resume = () => {
           <h2>Skills Técnicas</h2>
         </div>
         <div className="flex flex-col pt-4 pb-4">
-          <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-12">
-            <div className="flex flex-col items-center pb-8 ">
+          <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-8">
+            <div className="flex flex-col items-center pb-8">
               <h1 className="text-center text-4xl mb-[70px]">Front-End</h1>
               <div className="bg-[#070708] flex flex-col gap-12 border border-solid border-neutral-500  rounded-lg text-left p-8">
                 <div className='border-l-4 pl-4 border-l-blue-500'>
