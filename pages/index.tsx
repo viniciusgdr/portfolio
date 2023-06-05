@@ -201,19 +201,14 @@ export const Resume = () => {
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">HTML</h1>
                   <h2 className='text-blue-500'>Avançado</h2>
-                  <p className='pt-4'>HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.</p>
                 </div>
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">CSS</h1>
                   <h2 className='text-blue-500'>Intermediário</h2>
-                  <p className='pt-4'>CSS é uma linguagem de folha de estilo composta por “camadas”, criado com o propósito de estilizar as páginas HTML, ou seja, definir a aparência das páginas, trabalhando com cores, fontes, espaçamento entre linhas, margens, elementos gráficos, entre outros.</p>
                 </div>
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">JS</h1>
                   <h2 className='text-blue-500'>Avançado</h2>
-                  <p className='pt-4'>
-                    JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multi-paradigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.
-                  </p>
                 </div>
               </div>
             </div>
@@ -223,27 +218,18 @@ export const Resume = () => {
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">NodeJS</h1>
                   <h2 className='text-blue-500'>Avançado</h2>
-                  <p className='pt-4'>Node.js é um interpretador
-                    de código JavaScript com o código aberto, focado em migrar o Javascript do lado do cliente para servidores.</p>
                 </div>
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">TypeScript</h1>
                   <h2 className='text-blue-500'>Avançado</h2>
-                  <p className='pt-4'>TypeScript é um superconjunto de JavaScript desenvolvido pela Microsoft que adiciona tipagem e alguns outros recursos a linguagem. Anders Hejlsberg, arquiteto da linguagem C# e criador das linguagens Delphi e Turbo Pascal, trabalhou no desenvolvimento do TypeScript.</p>
                 </div>
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">GO Lang</h1>
                   <h2 className='text-blue-500'>Intermediário</h2>
-                  <p className='pt-4'>
-                    Go é uma linguagem de programação criada pela Google e lançada em código livre em novembro de 2009. Algumas das suas características incluem tipagem estática e forte, suporte a Orientação a objetos, programação estruturada..
-                  </p>
                 </div>
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">C/C++</h1>
                   <h2 className='text-blue-500'>Básico</h2>
-                  <p className='pt-4'>
-                    C++ é uma linguagem de programação compilada multi-paradigma e de uso geral. Desde os anos 1990 é uma das linguagens comerciais mais populares, sendo bastante usada por seu grande desempenho e base de utilizadores.
-                  </p>
                 </div>
               </div>
             </div>
@@ -253,19 +239,14 @@ export const Resume = () => {
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">ReactJS</h1>
                   <h2 className='text-blue-500'>Avançado</h2>
-                  <p className='pt-4'>React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais.</p>
                 </div>
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">NextJS</h1>
                   <h2 className='text-blue-500'>Avançado</h2>
-                  <p className='pt-4'>Next.js é um framework de aplicativos da web de código aberto baseado em React.js, Node.js, Express e webpack. Ele permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para aplicativos da web baseados em React.</p>
                 </div>
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">NestJS</h1>
                   <h2 className='text-blue-500'>Intermediário</h2>
-                  <p className='pt-4'>
-                    NestJS é um framework para Node.js que utiliza TypeScript, enquanto o Express é um framework para Node.js que utiliza JavaScript. O NestJS é um framework que utiliza o Express, mas com uma estrutura diferente, utilizando conceitos de Orientação a Objetos.
-                  </p>
                 </div>
               </div>
             </div>
@@ -275,21 +256,14 @@ export const Resume = () => {
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">MongoDB</h1>
                   <h2 className='text-blue-500'>Avançado</h2>
-                  <p className='pt-4'>MongoDB é um software de banco de dados orientado a documentos livre, de código aberto e multiplataforma, escrito na linguagem C++. Classificado como um programa de banco de dados NoSQL, o MongoDB usa documentos semelhantes a JSON com esquemas.</p>
                 </div>
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">SQLite</h1>
                   <h2 className='text-blue-500'>Avançado</h2>
-                  <p className='pt-4'>
-                    SQLite é uma biblioteca em linguagem C que implementa um banco de dados SQL embutido. Programas que usam a biblioteca SQLite podem ter acesso a banco de dados SQL sem executar um processo SGBD separado.
-                  </p>
                 </div>
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">Prisma (ORM)</h1>
                   <h2 className='text-blue-500'>Avançado</h2>
-                  <p className='pt-4'>
-                    Prisma é um ORM para Node.js e TypeScript, que suporta PostgreSQL, MySQL e SQLite. Ele foi projetado para ser usado com o GraphQL e vem com recursos como geração de esquema GraphQL, migrações de banco de dados, geração de tipos e muito mais.
-                  </p>
                 </div>
               </div>
             </div>
