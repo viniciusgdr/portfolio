@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { NextRouter, useRouter } from 'next/router'
+import { useState } from 'react'
 import { FaPlug, FaRobot, FaSitemap, FaDesktop, FaLocationArrow, FaInstagram, FaWhatsapp, FaGithub, FaAddressBook, FaUserTie, FaHome, FaEnvelope, FaBriefcase, FaMailBulk, FaMapMarkerAlt } from 'react-icons/fa'
 
 export const Index = () => {
@@ -145,7 +146,7 @@ export const Resume = () => {
         </div>
         <div className="flex flex-col pt-4 pb-4">
           <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-12">
-          <div className="flex flex-col items-center pb-8 ">
+            <div className="flex flex-col items-center pb-8 ">
               <h1 className="text-center text-4xl mb-[70px]">Experiências</h1>
               <div className="bg-[#070708] flex flex-col gap-12 border border-solid border-neutral-500  rounded-lg text-left p-8">
                 <div className='border-l-4 pl-4 border-l-blue-500'>
@@ -206,63 +207,92 @@ export const getGreetings = () => {
 }
 export default function Home() {
   const router = useRouter()
+  const [showMenu, setShowMenu] = useState(false)
   return (
     <>
-      <nav className="header-main fixed w-[10%] h-screen bg-[rgba(14,15,16,.6)] top-0">
-        <h2 className='pt-8 text-center text-4xl'>CV</h2>
-        <div className="flex flex-col h-full pt-16">
-          <div className="flex justify-center">
-            <a href="#home" onClick={
-              (e) => {
-                e.preventDefault()
-                router.push('/')
-              }
-            }>
-              <FaHome size={25} />
-            </a>
+      <div className="hidden max-lg:flex">
+        <div className="navbar bg-[#333333]">
+          <div className='navbar-start'>
+
           </div>
-          <div className="flex justify-center mt-10">
-            <a href="#about" onClick={
-              (e) => {
-                e.preventDefault()
-                router.push('/#about')
-              }
-            }>
-              <FaUserTie size={25} />
-            </a>
+          <div className="navbar-center">
+            <h1 className='text-2xl'>Carlos Vinicius</h1>
           </div>
-          <div className="flex justify-center mt-10">
-            <a href="#resumo" onClick={
-              (e) => {
-                e.preventDefault()
-                router.push('/#resumo')
-              }
-            }>
-              <FaAddressBook size={25} />
-            </a>
-          </div>
-          <div className="flex justify-center mt-10">
-            <a href="#portfolio" onClick={
-              (e) => {
-                e.preventDefault()
-                router.push('/#portfolio')
-              }
-            }>
-              <FaBriefcase size={25} />
-            </a>
-          </div>
-          <div className="flex justify-center mt-10">
-            <a href="#contact" onClick={
-              (e) => {
-                e.preventDefault()
-                router.push('/#contact')
-              }
-            }>
-              <FaEnvelope size={25} />
-            </a>
+          <div className="navbar-end">
+            <div className="dropdown dropdown-end">
+              <label 
+                tabIndex={0} 
+                className="btn btn-ghost btn-circle"
+                onClick={
+                  (e) => {
+                    e.preventDefault()
+                    setShowMenu(!showMenu)
+                  }
+                }
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+              </label>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
+      <div className={showMenu ? "" : "hidden" + " lg:flex"}>
+        <nav className="header-main fixed w-[10%] h-screen bg-[rgba(14,15,16,.6)] top-0">
+          <h2 className='pt-8 text-center text-4xl'>CV</h2>
+          <div className="flex flex-col h-full pt-16">
+            <div className="flex justify-center">
+              <a href="#home" onClick={
+                (e) => {
+                  e.preventDefault()
+                  router.push('/')
+                }
+              }>
+                <FaHome size={25} />
+              </a>
+            </div>
+            <div className="flex justify-center mt-10">
+              <a href="#about" onClick={
+                (e) => {
+                  e.preventDefault()
+                  router.push('/#about')
+                }
+              }>
+                <FaUserTie size={25} />
+              </a>
+            </div>
+            <div className="flex justify-center mt-10">
+              <a href="#resumo" onClick={
+                (e) => {
+                  e.preventDefault()
+                  router.push('/#resumo')
+                }
+              }>
+                <FaAddressBook size={25} />
+              </a>
+            </div>
+            <div className="flex justify-center mt-10">
+              <a href="#portfolio" onClick={
+                (e) => {
+                  e.preventDefault()
+                  router.push('/#portfolio')
+                }
+              }>
+                <FaBriefcase size={25} />
+              </a>
+            </div>
+            <div className="flex justify-center mt-10">
+              <a href="#contact" onClick={
+                (e) => {
+                  e.preventDefault()
+                  router.push('/#contact')
+                }
+              }>
+                <FaEnvelope size={25} />
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
       {
         router.asPath === '/#home' || router.asPath === '/' ? <Index /> :
           router.asPath === '/#about' ? <About /> :
