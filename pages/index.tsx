@@ -136,6 +136,61 @@ export const Contact = () => {
     </div>
   )
 }
+export const Resume = () => {
+  return (
+    <div className="flex justify-center h-screen">
+      <section className="container pr-[15px] pl-[15px] max-w-8xl">
+        <div className="row mt-[70px] mb-[70px] text-center text-6xl">
+          <h2>Resumo</h2>
+        </div>
+        <div className="flex flex-col pt-4 pb-4">
+          <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-12">
+          <div className="flex flex-col items-center pb-8 ">
+              <h1 className="text-center text-4xl mb-[70px]">Experiências</h1>
+              <div className="bg-[#070708] flex flex-col gap-12 border border-solid border-neutral-500  rounded-lg text-left p-8">
+                <div className='border-l-4 pl-4 border-l-blue-500'>
+                  <h1 className="text-2xl">Group BlackHall - Kellner WhatsApp</h1>
+                  <h2 className='text-blue-500'>2023-Atual</h2>
+                  <p className='pt-4'>Um dos Fundadores da Empresa Group BlackHall juntamente com o projeto Kellner, que atende diversos restaurantes ao redor do mundo.</p>
+                </div>
+                <div className='border-l-4 pl-4 border-l-blue-500'>
+                  <h1 className="text-2xl">TomoriBOT WhatsApp</h1>
+                  <h2 className='text-blue-500'>2020-Atual</h2>
+                  <p className='pt-4'>Projeto feito por mim que supre a necessidade de administração de grupos de WhatsApp.</p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col items-center pb-8 ">
+              <h1 className="text-center text-4xl mb-[70px]">Educação</h1>
+              <div className="bg-[#070708] flex flex-col gap-12 border border-solid border-neutral-500  rounded-lg text-left p-8">
+                <div className='border-l-4 pl-4 border-l-blue-500'>
+                  <h1 className="text-2xl">Técnico em Redes de Computadores</h1>
+                  <h2 className='text-blue-500'>2023-2025 | ETEGEC</h2>
+                  <p className='pt-4'>O trabalho de um técnico em redes de computadores envolve uma variedade de tarefas. Primeiramente, ele deve planejar e implementar redes de computadores, levando em consideração as necessidades e requisitos da organização. Isso inclui a escolha dos equipamentos de rede adequados, como roteadores, switches e firewalls, e a instalação física dos cabos e dispositivos.</p>
+                </div>
+                <div className='border-l-4 pl-4 border-l-blue-500'>
+                  <h1 className="text-2xl">NodeJS, Typescript, TDD, DDD, Clean Architecture e SOLID course, 4Dev academy</h1>
+                  <h2 className='text-blue-500'>2022-2023 | Rodrigo Manguinho</h2>
+                  <p className='pt-4'>A 4Dev Academy oferece um curso abrangente sobre Node.js, TypeScript, TDD (Test-Driven Development), DDD (Domain-Driven Design), Clean Architecture e SOLID.</p>
+                </div>
+                <div className='border-l-4 pl-4 border-l-blue-500'>
+                  <h1 className="text-2xl">Curso Full Stack Profissional com Javascript</h1>
+                  <h2 className='text-blue-500'>2021-2022 | OneBitCode</h2>
+                  <p className='pt-4'>O Curso Full Stack Profissional Javascript contém o essencial até o avançado sobre a programação moderna. Aborda profundamente todos os conteudos abordados.</p>
+                </div>
+                <div className='border-l-4 pl-4 border-l-blue-500'>
+                  <h1 className="text-2xl">Curso Web Moderno Completo com JavaScript 2022</h1>
+                  <h2 className='text-blue-500'>2022 | Udemy - Cod3r Cursos Online</h2>
+                  <p className='pt-4'>Neste curso aborda o desenvolvimento Web de ponta a ponta, para que você seja capaz de construir uma aplicação com as principais tecnologias do mercado. São 14 cursos dentro de um só. Você irá aprender Javascript, que é hoje a linguagem da atualidade, várias empresas estão migrando suas bases de PHP, Python e outras para terem suas bases completamente feitas em javascript. Também irá aprender Node, os últimos recursos de HTML e  CSS, Gulp, Webpack, jQuery, Bootstrap, React ( Tecnologia usada por umas das maiores empresas do mundo, o Facebook), Angular, Vue JS, ExpressJS, MySQL, MongoDB e Electron.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
 export const getGreetings = () => {
   const date = new Date()
   const hours = date.getHours()
@@ -210,10 +265,10 @@ export default function Home() {
       </nav>
       {
         router.asPath === '/#home' || router.asPath === '/' ? <Index /> :
-          router.asPath === '/#about' ? <About /> : 
-          router.asPath === '/#contact' ? <Contact /> : (
-            <h1 className="text-center">Not implemented.</h1>
-          )
+          router.asPath === '/#about' ? <About /> :
+            router.asPath === '/#contact' ? <Contact /> :
+              router.asPath === '/#resumo' ? <Resume /> :
+                <></>
       }
     </>
   )
