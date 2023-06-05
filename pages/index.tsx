@@ -211,7 +211,7 @@ export default function Home() {
   return (
     <>
       <div className="hidden max-lg:flex">
-        <div className="navbar bg-[#333333]">
+        <div className="navbar bg-[rgba(14,15,16,.6)]">
           <div className='navbar-start'>
 
           </div>
