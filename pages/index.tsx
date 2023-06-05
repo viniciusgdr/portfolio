@@ -184,6 +184,16 @@ export const Resume = () => {
                   <h2 className='text-blue-500'>2022 | Udemy - Cod3r Cursos Online</h2>
                   <p className='pt-4'>Neste curso aborda o desenvolvimento Web de ponta a ponta, para que você seja capaz de construir uma aplicação com as principais tecnologias do mercado. São 14 cursos dentro de um só. Você irá aprender Javascript, que é hoje a linguagem da atualidade, várias empresas estão migrando suas bases de PHP, Python e outras para terem suas bases completamente feitas em javascript. Também irá aprender Node, os últimos recursos de HTML e  CSS, Gulp, Webpack, jQuery, Bootstrap, React ( Tecnologia usada por umas das maiores empresas do mundo, o Facebook), Angular, Vue JS, ExpressJS, MySQL, MongoDB e Electron.</p>
                 </div>
+                <div className='border-l-4 pl-4 border-l-blue-500'>
+
+                  <h1 className="text-2xl">Curso Técnico em Computadores</h1>
+
+                  <h2 className='text-blue-500'>2014-2018</h2>
+
+                  <p className='pt-4'>
+                   O Curso aborda desde o início até o avançado em manutenção e usabilidade de computadores. Contém cursos de: Word, Excel, PowerPoint, Windows, Linux, LibreOffice, etc.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -379,7 +389,7 @@ export default function Home() {
           router.asPath === '/#about' ? <About /> :
             router.asPath === '/#contact' ? <Contact /> :
               router.asPath === '/#resumo' ? <Resume /> :
-                <></>
+                <Index />
       }
     </>
   )
