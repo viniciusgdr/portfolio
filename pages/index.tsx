@@ -155,6 +155,15 @@ export const Resume = () => {
                   <p className='pt-4'>Um dos Fundadores da Empresa Group BlackHall juntamente com o projeto Kellner, que atende diversos restaurantes ao redor do mundo.</p>
                 </div>
                 <div className='border-l-4 pl-4 border-l-blue-500'>
+
+                  <h1 className="text-2xl">Auxiliar de Monitoramento </h1>
+
+                  <h2 className='text-blue-500'>2022-Atual | Cooper-UNE</h2>
+
+                  <p className='pt-4'>Auxiliar de Monitoramento na Cooper-Une, que supre as funcionabilidades de Monitoramento do Centro de Controle Operacional, Manutenção de Câmeras, DVRs, etc.</p>
+
+                </div>
+                <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">TomoriBOT WhatsApp</h1>
                   <h2 className='text-blue-500'>2020-Atual</h2>
                   <p className='pt-4'>Projeto feito por mim que supre a necessidade de administração de grupos de WhatsApp.</p>
