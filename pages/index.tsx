@@ -151,13 +151,23 @@ export const Resume = () => {
               <div className="bg-[#070708] flex flex-col gap-12 border border-solid border-neutral-500  rounded-lg text-left p-8">
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">Group BlackHall - Kellner WhatsApp</h1>
-                  <h2 className='text-blue-500'>2023-Atual</h2>
+                  <h2 className='text-blue-500'>2023-Atual | BlackHall Group</h2>
                   <p className='pt-4'>Um dos Fundadores da Empresa Group BlackHall juntamente com o projeto Kellner, que atende diversos restaurantes ao redor do mundo.</p>
+                </div>
+                <div className='border-l-4 pl-4 border-l-blue-500'>
+                  <h1 className="text-2xl">Auxiliar de Monitoramento </h1>
+                  <h2 className='text-blue-500'>2022-Atual | Cooper-UNE</h2>
+                  <p className='pt-4'>Auxiliar de Monitoramento na Cooper-Une, que supre as funcionabilidades de Monitoramento do Centro de Controle Operacional, Manutenção de Câmeras, DVRs, etc.</p>
                 </div>
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">TomoriBOT WhatsApp</h1>
                   <h2 className='text-blue-500'>2020-Atual</h2>
                   <p className='pt-4'>Projeto feito por mim que supre a necessidade de administração de grupos de WhatsApp.</p>
+                </div>
+                <div className='border-l-4 pl-4 border-l-blue-500'>
+                  <h1 className="text-2xl">TuttaBOT</h1>
+                  <h2 className='text-blue-500'>2022-2023</h2>
+                  <p className='pt-4'>Robô para Telegram e via website que coordenava apostas na Blaze em tempo real usando websockets. Tinha a funcionabilidade de Criar Estratégias e validação de jogadas passadas {"prevendo"} o futuro.</p>
                 </div>
               </div>
             </div>
@@ -190,6 +200,16 @@ export const Resume = () => {
                   <h1 className="text-2xl">Curso Web Moderno Completo com JavaScript 2022</h1>
                   <h2 className='text-blue-500'>2022 | Udemy - Cod3r Cursos Online</h2>
                   <p className='pt-4'>Neste curso aborda o desenvolvimento Web de ponta a ponta, para que você seja capaz de construir uma aplicação com as principais tecnologias do mercado. São 14 cursos dentro de um só. Você irá aprender Javascript, que é hoje a linguagem da atualidade, várias empresas estão migrando suas bases de PHP, Python e outras para terem suas bases completamente feitas em javascript. Também irá aprender Node, os últimos recursos de HTML e  CSS, Gulp, Webpack, jQuery, Bootstrap, React ( Tecnologia usada por umas das maiores empresas do mundo, o Facebook), Angular, Vue JS, ExpressJS, MySQL, MongoDB e Electron.</p>
+                </div>
+                <div className='border-l-4 pl-4 border-l-blue-500'>
+
+                  <h1 className="text-2xl">Curso Técnico em Computadores</h1>
+
+                  <h2 className='text-blue-500'>2014-2018</h2>
+
+                  <p className='pt-4'>
+                   O Curso aborda desde o início até o avançado em manutenção e usabilidade de computadores. Contém cursos de: Word, Excel, PowerPoint, Windows, Linux, LibreOffice, etc.
+                  </p>
                 </div>
               </div>
             </div>
@@ -402,7 +422,7 @@ export default function Home() {
           router.asPath === '/#about' ? <About /> :
             router.asPath === '/#contact' ? <Contact /> :
               router.asPath === '/#resumo' ? <Resume /> :
-                <></>
+                <Index />
       }
     </>
   )
