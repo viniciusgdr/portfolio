@@ -170,6 +170,13 @@ export const Resume = () => {
                   <p className='pt-4'>O trabalho de um técnico em redes de computadores envolve uma variedade de tarefas. Primeiramente, ele deve planejar e implementar redes de computadores, levando em consideração as necessidades e requisitos da organização. Isso inclui a escolha dos equipamentos de rede adequados, como roteadores, switches e firewalls, e a instalação física dos cabos e dispositivos.</p>
                 </div>
                 <div className='border-l-4 pl-4 border-l-blue-500'>
+                  <h1 className="text-2xl">Curso PHP Completo</h1>
+                  <h2 className='text-blue-500'>2023-2023 | Beer and Code</h2>
+                  <a className='pt-4 text-blue-500 hover:text-blue-600' href='https://www.youtube.com/watch?v=o-cd2VDQ2mg'>
+                    <p>Link do curso</p>
+                  </a>
+                </div>
+                <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">NodeJS, Typescript, TDD, DDD, Clean Architecture e SOLID course, 4Dev academy</h1>
                   <h2 className='text-blue-500'>2022-2023 | Rodrigo Manguinho</h2>
                   <p className='pt-4'>A 4Dev Academy oferece um curso abrangente sobre Node.js, TypeScript, TDD (Test-Driven Development), DDD (Domain-Driven Design), Clean Architecture e SOLID.</p>
@@ -225,6 +232,10 @@ export const Resume = () => {
                 </div>
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">GO Lang</h1>
+                  <h2 className='text-blue-500'>Avançado</h2>
+                </div>
+                <div className='border-l-4 pl-4 border-l-blue-500'>
+                  <h1 className="text-2xl">PHP</h1>
                   <h2 className='text-blue-500'>Intermediário</h2>
                 </div>
                 <div className='border-l-4 pl-4 border-l-blue-500'>
@@ -248,6 +259,14 @@ export const Resume = () => {
                   <h1 className="text-2xl">NestJS</h1>
                   <h2 className='text-blue-500'>Intermediário</h2>
                 </div>
+                <div className='border-l-4 pl-4 border-l-blue-500'>
+                  <h1 className="text-2xl">Laravel</h1>
+                  <h2 className='text-blue-500'>Intermediário</h2>
+                </div>
+                <div className='border-l-4 pl-4 border-l-blue-500'>
+                  <h1 className="text-2xl">Livewire</h1>
+                  <h2 className='text-blue-500'>Intermediário</h2>
+                </div>
               </div>
             </div>
             <div className="flex flex-col items-center pb-8 ">
@@ -260,6 +279,10 @@ export const Resume = () => {
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">SQLite</h1>
                   <h2 className='text-blue-500'>Avançado</h2>
+                </div>
+                <div className='border-l-4 pl-4 border-l-blue-500'>
+                  <h1 className="text-2xl">PostgreSQL</h1>
+                  <h2 className='text-blue-500'>Intermediário</h2>
                 </div>
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">Prisma (ORM)</h1>
