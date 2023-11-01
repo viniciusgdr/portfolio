@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { NextRouter, useRouter } from 'next/router'
 import { useState } from 'react'
 import { FaPlug, FaRobot, FaSitemap, FaDesktop, FaLocationArrow, FaInstagram, FaWhatsapp, FaGithub, FaAddressBook, FaUserTie, FaHome, FaEnvelope, FaBriefcase, FaMailBulk, FaMapMarkerAlt } from 'react-icons/fa'
@@ -54,7 +55,7 @@ export const About = () => {
         <div className="bg-[#070708] flex flex-col border rounded-lg mb-[30px] pt-4 pb-4 items-center text-center">
           <Image
             alt='Foto de perfil'
-            src="https://img.kalunga.com.br/fotosdeprodutos/479735z_1.jpg"
+            src="/my_picture.png"
             className="rounded-full bg-center border-4 border-white"
             width={200}
             height={200}
@@ -65,7 +66,7 @@ export const About = () => {
               <FaLocationArrow />{'  '}
               Camaragibe - PE
             </h3>
-            <p className='max-w-xl pt-3'>🖥️ Muito {getGreetings()}! Me chamo Carlos Vinicius, tenho 15 anos. Meu foco de atuação é no segmento back end 🚀</p>
+            <p className='max-w-xl pt-3'>🖥️ Muito {getGreetings()}! Me chamo Carlos Vinicius, tenho 15 anos. Meu foco de atuação é no segmento full stack e estou com aproximadamente 2 anos e meio no mercado. 🚀</p>
           </div>
         </div>
         <div className="bg-[#070708] flex flex-col border rounded-lg pt-4 pb-4 text-center">
@@ -83,24 +84,24 @@ export const About = () => {
         <div className="row mt-[70px] mb-[30px] text-center text-4xl">
           <h2>Serviços</h2>
         </div>
-        <div className="bg-[#070708] border rounded-lg pt-2 pb-4 text-center">
+        <div className="pt-2 pb-4 text-center">
           <div className="grid lg:grid-cols-2 sm:grid-cols-1 p-2 gap-8">
-            <div className="rounded bg-slate-500 pt-4 pb-4 flex flex-col text-center place-self-center items-center">
+            <div className="rounded bg-slate-800 pt-4 pb-4 flex flex-col text-center place-self-center items-center border rounded-lg">
               <FaDesktop size={50} />
               <h1 className='text-2xl'>Desenvolvimento Web</h1>
               <a>Desenvolvimento de sistemas para internet escaláveis, com qualidade e personalização. Sempre de olho em novas tendências e utilizando as melhores tecnologias do mercado sempre alinhadas com os seus objetivos.</a>
             </div>
-            <div className="rounded bg-slate-500 pt-4 pb-4 flex flex-col text-center place-self-center items-center">
+            <div className="rounded bg-slate-800 pt-4 pb-4 flex flex-col text-center place-self-center items-center border rounded-lg">
               <FaSitemap size={50} />
               <p className='text-2xl'>Criação de Sites</p>
               <a>Sites profissionais, personalizados e responsivos de alta performance e otimizados para o Google. Aumente a visibilidade do seu negócio na internet e gere credibilidade para a sua empresa.</a>
             </div>
-            <div className="rounded bg-slate-500 pt-4 pb-4 flex flex-col text-center place-self-center items-center">
+            <div className="rounded bg-slate-800 pt-4 pb-4 flex flex-col text-center place-self-center items-center border rounded-lg">
               <FaRobot size={50} />
               <p className='text-2xl'>Criação de Bots</p>
               <a>Automatize seus processos (atendimento ao cliente, suporte, etc) com nossas soluções de chatbots inteligentes para Whatsapp, Telegram, Discord, etc.</a>
             </div>
-            <div className="rounded bg-slate-500 pt-4 pb-4 flex flex-col text-center place-self-center items-center">
+            <div className="rounded bg-slate-800 pt-4 pb-4 flex flex-col text-center place-self-center items-center border rounded-lg">
               <FaPlug size={50} />
               <p className='text-2xl'>Integração entre Sistemas</p>
               <a>A integração de sistemas é um processo que tem o propósito de reunir duas ou mais soluções empresariais em apenas uma ou deixá-las interligadas.</a>
@@ -150,9 +151,29 @@ export const Resume = () => {
               <h1 className="text-center text-4xl mb-[70px]">Experiências</h1>
               <div className="bg-[#070708] flex flex-col gap-12 border border-solid border-neutral-500  rounded-lg text-left p-8">
                 <div className='border-l-4 pl-4 border-l-blue-500'>
-                  <h1 className="text-2xl">Group BlackHall - Kellner WhatsApp</h1>
-                  <h2 className='text-blue-500'>2023-Atual | BlackHall Group</h2>
-                  <p className='pt-4'>Um dos Fundadores da Empresa Group BlackHall juntamente com o projeto Kellner, que atende diversos restaurantes ao redor do mundo.</p>
+                  <h1 className="text-2xl">BusConnect: Horários de Ônibus</h1>
+                  <h2 className='text-blue-500'>2023-Atual</h2>
+                  <p className='pt-4'>Aplicativo para informar os horários e rotas dos ônibus
+                    em tempo real. Além disso, dependendo da sua localização, você pode
+                    recarregar seu cartão, recarregar seu bilhete de transporte e até pagar suas
+                    passagens usando seu celular.
+                  </p>
+                  <div className="flex justify-center pt-4">
+                    <a href="https://play.google.com/store/apps/details?id=com.busconnect.app" target="_blank" rel="noopener noreferrer">
+                      <Image src="/android_play_google.webp" alt="Google Play Badge" width={200} height={60} />
+                    </a>
+                  </div>
+                  <div className="flex justify-center pt-4">
+                    <Link href='https://busconnect.com.br' className="btn btn-accent btn-wide">Site</Link>
+                  </div>
+                </div>
+                <div className='border-l-4 pl-4 border-l-blue-500'>
+                  <h1 className="text-2xl">gdrplay</h1>
+                  <h2 className='text-blue-500'>2023</h2>
+                  <p className='pt-4'>Projeto para transmissão de vídeos sob demanda e streaming em tempo rea</p>
+                  <div className="flex justify-center pt-4">
+                    <Link href='https://play.gdr.dev.br' className="btn btn-accent btn-wide">Site</Link>
+                  </div>
                 </div>
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">Auxiliar de Monitoramento </h1>
@@ -163,6 +184,9 @@ export const Resume = () => {
                   <h1 className="text-2xl">TomoriBOT WhatsApp</h1>
                   <h2 className='text-blue-500'>2020-Atual</h2>
                   <p className='pt-4'>Projeto feito por mim que supre a necessidade de administração de grupos de WhatsApp.</p>
+                  <div className="flex justify-center pt-4">
+                    <Link href='https://tomoribot.gdr.dev.br' className="btn btn-accent btn-wide">Site</Link>
+                  </div>
                 </div>
                 <div className='border-l-4 pl-4 border-l-blue-500'>
                   <h1 className="text-2xl">TuttaBOT</h1>
@@ -208,7 +232,7 @@ export const Resume = () => {
                   <h2 className='text-blue-500'>2014-2018</h2>
 
                   <p className='pt-4'>
-                   O Curso aborda desde o início até o avançado em manutenção e usabilidade de computadores. Contém cursos de: Word, Excel, PowerPoint, Windows, Linux, LibreOffice, etc.
+                    O Curso aborda desde o início até o avançado em manutenção e usabilidade de computadores. Contém cursos de: Word, Excel, PowerPoint, Windows, Linux, LibreOffice, etc.
                   </p>
                 </div>
               </div>
